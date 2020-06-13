@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+
+html{
+    margin: 0;
+    height: 100%;
+    font-family: "Trebuchet MS";
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-image: url("../images/header-background.jpg");
+        background-size: cover;
+        position: relative;
+        color: white;
+    }
+
+    .content{
+        background: white;
+        flex: 10;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer{
+        background: #277186;
+        flex: 0.5;
+        color: white;
+    }
+}
+
+.navbar{
+    background-color: #277186;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    
+    a{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    a:hover{
+        background-color: #bed4da;
+        color: #000000;
+    }
+    
+    .dpmenu{
+        margin: auto 0;
+    }
+    
+    .options{
+        display: none;
+        position: absolute;
+        top: 131px;
+        background-color: #277186;
+        min-width: 174px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .options a{
+        color: #ffffff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .options a:hover {
+        color: #000000;
+        background-color: #bed4da;
+    }
+
+    .dpmenu:hover .options{
+        display: block;
+    }
+
+    .dpmenuinner{
+        .optionsinner{
+            display: none;
+        }
+    }
+
+    .optionsinner a:hover {
+        color: #000000;
+        background-color: #bed4da;
+    }
+
+    .dpmenuinner:hover .optionsinner{
+        display: block;
+    }
+}
+
+.content{
+    justify-content: space-around;
+
+    .element{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        .subelement{
+            font-size: 2.5vw;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .subimage{
+            height: 30vw;
+            width: 50vw;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+
+        .dpmenu{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .options{
+            margin-top: 1rem;
+            top: 0;
+            position: relative;
+            width: 100%;
+        }
+    }
+}

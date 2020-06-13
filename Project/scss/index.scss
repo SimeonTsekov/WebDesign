@@ -60,6 +60,49 @@ html{
         color: #000000;
     }
 
+    .dpmenu{
+        margin: auto 0;
+    }
+
+    .options{
+        display: none;
+        position: absolute;
+        top: 131px;
+        background-color: #277186;
+        min-width: 158px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .options a{
+        color: #ffffff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .options a:hover {
+        color: #000000;
+        background-color: #bed4da;
+    }
+
+    .dpmenu:hover .options{
+        display: block;
+    }
+
+    .dpmenuinner{
+        .optionsinner{
+            display: none;
+        }
+    }
+
+    .optionsinner a:hover {
+        color: #000000;
+        background-color: #bed4da;
+    }
+
+    .dpmenuinner:hover .optionsinner{
+        display: block;
+    }
 }
 
 .content{
@@ -75,7 +118,7 @@ html{
         padding-right: 3rem;
 
         .subelement{
-            font-size: 5vw;
+            font-size: 2.5vw;
             padding-top: 1rem;
             padding-bottom: 1rem;
             padding-left: 3rem;
@@ -83,7 +126,7 @@ html{
         }
 
         .subimage{
-            height: 50vw;
+            height: 30vw;
             width: 50vw;
         }
     }
@@ -103,5 +146,17 @@ h1{
     .navbar{
         flex-direction: column;
         text-align: center;
+
+        .dpmenu{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .options{
+            margin-top: 1rem;
+            top: 0;
+            position: relative;
+            width: 100%;
+        }
     }
 }

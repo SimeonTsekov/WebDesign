@@ -1,33 +1,33 @@
 .microcontroller{
-    border: 3px solid #505050;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    transition: 0.3s;
-    text-align: center;
-    
-    .mcimage{
-        padding: 1rem;
-        height: 25vw;
-        width: 25vw;
-    }
+	border: 3px solid #505050;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	transition: 0.3s;
+	text-align: center;
+	
+	.mcimage{
+		padding: 1rem;
+		height: 25vw;
+		width: 25vw;
+	}
 
-    .order{
-        background-color: #277186;
-        color: #ffffff;
-        border: none;
-        text-align: center;
-        padding: 1rem;
-        margin: 2rem;
-        transition: 0.3s;
-    }
+	.order{
+		background-color: #277186;
+		color: #ffffff;
+		border: none;
+		text-align: center;
+		padding: 1rem;
+		margin: 2rem;
+		transition: 0.3s;
+	}
 }
 
 .microcontroller:hover{
-    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
-    
-    .order:hover{
-        background-color: #bed4da;
-        color: #000000;
-    }
+	box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+	
+	.order:hover{
+		background-color: #bed4da;
+		color: #000000;
+	}
 }

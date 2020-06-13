@@ -38,8 +38,8 @@ html {
   .navbar a {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s; }
@@ -53,7 +53,7 @@ html {
     position: absolute;
     top: 131px;
     background-color: #277186;
-    min-width: 158px;
+    min-width: 174px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
   .navbar .options a {
     color: #ffffff;
@@ -101,7 +101,10 @@ html {
 h1 {
   text-align: center; }
 
-@media screen and (max-width: 600px) {
+h2 {
+  text-align: center; }
+
+@media screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
     text-align: center; }

@@ -54,16 +54,16 @@ html{
         text-decoration: none;
         transition: 0.3s;
     }
-
+    
     a:hover{
         background-color: #bed4da;
         color: #000000;
     }
-
+    
     .dpmenu{
         margin: auto 0;
     }
-
+    
     .options{
         display: none;
         position: absolute;
@@ -143,6 +143,14 @@ h1{
 }
 
 h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
     text-align: center;
 }
 

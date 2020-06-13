@@ -1,3 +1,81 @@
 body {
-  background: #660d0d;
-  color: white; }
+  margin: 0;
+  height: 100%; }
+
+html {
+  margin: 0;
+  height: 100%;
+  font-family: "Trebuchet MS"; }
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column; }
+  .container .header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: url("../images/header-background.jpg");
+    background-size: cover;
+    position: relative;
+    color: white; }
+  .container .content {
+    background: white;
+    flex: 10;
+    color: black;
+    display: flex;
+    flex-direction: column; }
+  .container .footer {
+    background: #277186;
+    flex: 0.5;
+    color: white; }
+
+.navbar {
+  background-color: #277186;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none; }
+  .navbar a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s; }
+  .navbar a:hover {
+    background-color: #bed4da;
+    color: #000000; }
+
+.content {
+  justify-content: space-around; }
+  .content .element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .content .element .subelement {
+      font-size: 5vw;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem; }
+    .content .element .subimage {
+      height: 50vw;
+      width: 50vw; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none; }
+
+h1 {
+  text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center; } }

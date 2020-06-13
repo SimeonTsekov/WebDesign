@@ -13,7 +13,7 @@ function watch(){
     browserSync.init({
         server: {
             baseDir: './Project',
-            index: '/html/MainPage.html'
+            index: '/html/index.html'
         }
     });
     gulp.watch('./Project/scss/**/*.scss', style);

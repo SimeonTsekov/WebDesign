@@ -1,0 +1,34 @@
+.reviewContainer {
+    border: 2px solid #505050;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    transition: 0.3s;
+    text-align: center; }
+
+    .reviewContainer .formHeader {
+        text-align: center;
+        color: #ffffff;
+        background-color: #277186;
+        padding: 1rem;
+        margin: 1rem 2rem; }
+    
+    .reviewContainer .order {
+        background-color: #277186;
+        color: #ffffff;
+        border: none;
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem;
+        transition: 0.3s; }
+  
+    .formField{
+        border: 1px solid #505050;
+        text-align: center;
+        padding: 1rem;
+        margin: 0rem 2rem;
+    }
+    .reviewContainer:hover .order:hover {
+        background-color: #bed4da;
+        color: #ffffff; }
+  
